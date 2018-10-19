@@ -4,6 +4,9 @@ H1 {
 #survey {
   text-align: center;
 }
-.programmer,.no-go {
+#programmer {
+  display: none;
+}
+#no-go {
   display: none;
 }
