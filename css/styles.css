@@ -1,3 +1,9 @@
 H1 {
   text-align: center;
 }
+#survey {
+  text-align: center;
+}
+.programmer,.no-go {
+  display: none;
+}

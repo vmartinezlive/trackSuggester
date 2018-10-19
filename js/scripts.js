@@ -1,18 +1,25 @@
-var totalYes = function(yes1, yes2, yes3, yes4, yes5) {
-  return yes1 + yes2 + yes3 + yes4 + yes5;
-  };
-
-
-
-
-
-
-
-
-
+var totalYes = function(number1, number2) {
+  return number1 + number2;
+}
+var yesProgrammer = function(totalYes) {
+  if(answer >=3) {
+    return true;
+  }else{
+    return false;
+  }
+}
 
 S(document).ready(function() {
-  $().submit(function(event) {
-
+  $("form#survey").submit(function(event) {
+    event.preventDefault();
+    var number1 = parseInt($("#input1").val());
+		var number2 = parseInt($("#input2").val());
+    if (totalYes === "yesProgrammer") {
+      $(".programmer").show();
+      $(".no-go").hide();
+    } else {
+      $(".no-go").show();
+      $(".programmer").hide();
+    }
   });
 });
